@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario General</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="formulario.png">
+</head>
+<body>
+	<form action="05-registro.html" method="get">
+		<fieldset>
+			<legend><h2>Formulario General</h2></legend>
+			<table>
+				<tr>
+					<td>Nombres: </td>
+					<td><input placeholder="Ingrese su Nombre"height="" type="text" name=nombre" value="" autofocus=""></td>
+				</tr>
+				<tr>
+					<td>Apellidos: </td>					
+					<td><input placeholder="Ingrese sus Apellidos" type="text" name="apellido" value=""></placeholder> </td>
+									
+				</tr>
+
+				<tr>
+					<td>Correo: </td>					
+					<td><input placeholder="Ingrese su correo electrónico" type="email" name="correo" value=""></placeholder> </td>									
+				</tr>
+				<tr>
+					<td>Genero: </td>					
+					<td>
+						Masculino<input type="radio" name="genero" value="M" checked>
+						Femenino<input type="radio" name="genero" value="F">							
+					</td>									
+				</tr>
+
+				<tr>
+					<td>Descripción: </td>					
+					<td><textarea type="text" placeholder="Ingrese sus comentarios" cols="40" rows="3" name="comentario" value=""></textarea> </td>									
+				</tr>
+				<tr>
+					<td>Lenguajes: </td>					
+					<td>
+						<input type="checkbox" name="lenguaje"  value="java" checked>Java
+						<input type="checkbox" name="lenguaje" value="c" checked>C#
+						<input type="checkbox" name="lenguaje" value="php" >PHP
+					</td>									
+				</tr>
+				<tr>
+					<td>Nacionalidad: </td>					
+					<td>
+						<select name="nacionalidad" multiple="true">
+							<option value="pe">Peruana</option>
+							<option value="ar">Argentina</option>
+							<option value="ve">Venezonala</option>
+						</select>
+					</td>									
+				</tr>
+				<tr>
+					<td>Dia de la Semana: </td>					
+					<td>
+						<input name="diasemana" list="dia">
+						<datalist id="dia">
+							<option value="1" label="Lunes">
+							<option value="2" label="Martes">
+							<option value="3" label="Miercoles">							
+						</datalist>
+					</td>									
+				</tr>
+				<tr>
+					<td>Completado 20%: </td>					
+					<td style="color: #456378;opacity: 0.5">
+						<progress name="completado" value="20" max="100" style="background-color: #f3f3f3;">20%</progress>						
+					</td>									
+				</tr>
+				<tr>
+					<td>Regla: </td>					
+					<td>
+						<meter value="10" min="0" max="100" low="20" high="80" optimum="100">20</meter>						
+					</td>									
+				</tr>
+
+
+				<tr>
+					<td colspan="2"><input type="submit" value="Registrar"></td>					
+									
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>

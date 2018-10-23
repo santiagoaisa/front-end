@@ -1,0 +1,38 @@
+p{
+	color: #0000FF;
+	font-size: 24px;	
+}
+
+span.politica1 {
+	color: green;
+	font-size: 24px;	
+}
+
+todos los a que esten dentro de los spam
+
+a span {
+	color: green;
+	font-size: 24px;	
+}
+
+div > a {
+	color: orange;
+	font-size: 26px;	
+}
+
+.politica {
+	text-decoration: underline wavy red;
+	color: #ff0000
+}
+
+.deporte {
+	text-decoration: underline wavy blue;
+	color: #0000ff
+}
+
+img{
+	float: right;
+	
+	width: 80px;
+	height: 80px;
+}

@@ -1,0 +1,82 @@
+﻿175073
+
+repositorio
+
+https://drive.google.com/drive/folders/131UKkSWsg3DSB1B_GOlBzrSv3j6I5dgD
+
+https://drive.google.com/drive/folders/1sDlHLMcGvolW7b1VIMmUN559-bg9QSyG
+
+//plantilla js
+https://tympanus.net
+
+
+//librerias c#
+https://www.nuget.org/
+
+resolver 5 ejercicios de cada unidad desde la unidad 3 , 4 ,5 (propuestos)
+
+unidad 3 88
+unidad 4 138
+unidad 5 168
+
+
+maketar la pagina
+https://moqups.com/
+
+
+subline text
+
+
+instalar modulos
+
+ctrl + ship + p 
+
+Install pack control
+
+Install install pack
+
+paquetes 
+
+- advancednewfile
+- dockBlokr
+- emmet
+- sidebarenhacemen
+- sublimeCodeIntel
+
+--para formatear
+- codeformatter  -- para usar ctrl+alt+f
+
+Buscar web scrapin de google
+minificación
+
+
+
+shurt cut
+
+ctrl +d 
+nav*5
+
+
+---
+
+Scrum
+
+WIFI CAMPUS
+
+ddelacruz
+3fwoa
+
+https://www.flaticon.com/
+
+
+
+//////
+
+version de .net
+
+dotnet --version
+dotnet --help
+dotnet new --help
+dotnet new console -o HelloWorld
+cd HelloWorld
+dotnet run

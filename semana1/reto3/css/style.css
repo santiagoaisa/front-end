@@ -1,0 +1,65 @@
+#contenedor {
+width: 100%;
+}
+
+#cabecera {
+	 height: 5em;
+	 background-color: #FF0000;
+}
+
+#cuerpo {
+  float: left;
+  width:60%;
+  height: 25em;
+  background-color: #FF0;
+}
+
+#menu {
+  float: right;
+  width: 40%;
+  height: 25em;
+  background-color: #0000FF;
+}
+
+#pie {
+	
+  clear: both;
+  height: 5em;
+  background-color: #00ff00;
+}
+
+.boton{
+  color: white;
+  border-radius: 4px;
+  background-color: #00ff00;
+  padding-left: 4px;
+  padding-right: 40px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+}
+
+
+.botones ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+.botones li{
+  display: inline;
+  text-align: center;
+  margin: 0 10px 0 0;
+}
+
+.botones li span{
+  color: white;
+  border-radius: 4px;
+  background-color: #00ff00;
+  padding: 10px 10px 10px 10px ;
+
+}
+
+.botones li span:hover{  
+  background-color: #333333;
+  color: #ffffff;
+}

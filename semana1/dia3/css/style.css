@@ -1,0 +1,56 @@
+p ~ p{
+	color: #ff0000;
+	font-size: 20px;	
+}
+
+span[name]{
+	font-size: 18px;
+	background-color: #00ff00;
+}
+
+span[name="minombre"]{
+	font-size: 20px;
+	background-color: #0000ff;
+}
+
+/*
+tr:nth-child(odd){
+	background-color: #999999 ;
+}
+
+tr:nth-child(even){
+	background-color: #cccccc ;
+}
+*/
+/*
+*Coloca el estilo a la primera fila
+*/
+tr:first-child{
+	background-color: #ff0000;
+}
+
+/*
+tr:last-child{
+	background-color: #542400;
+}
+*/
+@font-face {
+	font-family: 'harry';
+	src: url('harry.TTF');
+}
+
+.boton{
+	color: white;
+	border-radius: 4px;
+	background-color: #0000ff;
+	padding-left: 4px;
+	padding-right: 40px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-family: 'harry'
+}
+
+.letra{
+	font-family: 'harry';
+	font-size: 2em;
+}
