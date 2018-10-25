@@ -1,0 +1,40 @@
+.izquierda{
+    left: 0;
+    background-color: #FDFF9F;
+    width: 70%;
+}
+
+.derecha{
+    right: 0;
+    background-color: #C3E8D0;    
+    width: 30%;
+}
+
+.dividir{
+    height: 100%;   
+    position: fixed;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;	
+	caption-side: top;
+ }
+ 
+ caption, td, th,thead {
+	padding: 0.3em;
+ }
+ th, td {
+	border: 1px solid #000;
+	
+
+ }
+
+ thead {
+    border: 1px solid #000;
+    color: #ffffff;
+    background-color: #999999;
+   
+
+ }

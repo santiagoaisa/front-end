@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Factura</title>
+    <script src="js/factura.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body >
+    <h1>Super Mercado AQP</h1>
+    <hr>
+
+    <div class="izquierda dividir">
+
+        <table class="tabla" id="tabla">
+            <thead>
+                    <tr>
+                            <th>Item</th>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Total</th>                
+                        </tr>
+            </thead>
+            
+          
+        </table>
+
+
+    </div>
+
+    <div class="derecha dividir">
+
+        <form action="" onsubmit="return false">
+            <fieldset>
+                <legend>Productos</legend>
+
+                <label>Descripción:</label>
+                <select name="" id="selectProducto">
+                    <option value="">Celular Samsung Galaxy S8</option>
+                    <option value="">Huawei P20</option>
+                    <option value="">Xiaomi Global 4</option>
+                    <option value="">Motorola G4</option>
+                </select>
+
+                <label>Cantidad:</label>
+                <input type="number" value="1" id="inputCantidad" required>
+                <br>
+                <label>Precio Unitario:</label>
+                <input type="number" value="0" id="inputPrecioUnitario" required>
+                <br>
+
+                <label>Importe:</label>
+                <input type="number" disabled="true" id="inputImporte">
+                <br>
+                <button id="btnAgregar" >Agregar</button>
+
+
+            </fieldset>
+        </form>
+
+    </div>
+
+   
+
+</body>
+</html>
