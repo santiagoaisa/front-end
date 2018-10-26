@@ -1,0 +1,36 @@
+p,footer {
+    border: 1px solid blue;
+   
+}
+
+#parrafo1{
+    width: 200px;
+    color:white;
+    background-color: red;
+    border: 1px solid red;
+    float: left;  
+
+    margin: 0;
+
+}
+
+#parrafo2{
+    color:white;
+    background-color: blue;
+    margin: 0;
+
+}
+
+
+#parrafo3{
+    float: right;
+    width: 200px;
+    background-color:yellow;
+    margin: 0;
+
+}
+
+.clear {
+    clear: both;
+}
+

@@ -8,6 +8,30 @@ y cambiar el importe
 function initComponentes(){
     var btnAgregar=document.getElementById("btnAgregar");
     btnAgregar.addEventListener("click",agregarProducto);
+
+    var inputCantidad=document.getElementById("inputCantidad");
+    inputCantidad.addEventListener("keyup",calcularTotal);
+
+
+    var inputPrecioUnitario=document.getElementById("inputPrecioUnitario");
+    inputPrecioUnitario.addEventListener("keyup",calcularTotal);
+
+    // para utilizar el this del eventlistener
+    //inputPrecioUnitario.addEventListener("keyup",function(){
+    //    console.log(this.value);
+    //} );
+    
+
+}
+
+function calcularTotal(){
+    var inputCantidad=document.getElementById("inputCantidad");
+    var inputPrecioUnitario=document.getElementById("inputPrecioUnitario");
+    var inputImporte=document.getElementById("inputImporte");
+
+
+    inputImporte.value=parseFloat(inputCantidad.value)*parseFloat(inputPrecioUnitario.value);
+
 }
 
 function agregarProducto(){

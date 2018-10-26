@@ -1,0 +1,40 @@
+#padre{
+    width: 700px;
+    border: 1px solid; 
+}
+
+#caja-1{
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    background: #AAA;
+}
+
+#caja-2{
+    float: left;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    background: #CCC;
+}
+
+#caja-3{
+    float: right;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    background: #AAA;
+}
+
+#caja-4{
+    float: right;
+    width: 140px;
+    height: 50px;
+    margin: 5px;
+    background: #CCC;
+}
+
+#restaurar{
+    clear: both;
+}
