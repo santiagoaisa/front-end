@@ -10,7 +10,7 @@
 	background-color: #0F76A0;
 }
 #cabeceralogo > div {
-	width: 960px;
+	max-width: 960px;
 	margin: 0px auto;
 	padding-top: 45px;
 }
@@ -27,7 +27,7 @@
 	border-bottom: 1px solid #094660;
 }
 #menuprincipal > div {
-	width: 960px;
+	max-width: 960px;
 	margin: 0px auto;
 }
 
@@ -45,6 +45,212 @@
 	color: #333333;
 	text-decoration: none;
 }
+
+main {
+	max-width: 96%;
+	padding: 2%;
+	background-image: url("fondo.png");
+}
+main > div {
+	max-width: 960px;
+	margin: 0px auto;
+}
+#articulosprincipales {
+	float: left;
+	width: 65%;
+	padding-top: 30px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+#infoadicional {
+	float: right;
+	width: 29%;
+	padding: 2%;
+	background-color: #E7F1F5;
+	border-radius: 10px;
+}
+#infoadicional h1 {
+	font: bold 18px Arial, sans-serif;
+	color: #333333;
+	margin-bottom: 15px;
+}
+.recuperar {
+	clear: both;
+}
+article {
+	position: relative;
+	padding: 0px 40px 20px 40px;
+}
+article time {
+	display: block;
+	position: absolute;
+	top: -5px;
+	left: -70px;
+	width: 80px;
+	padding: 15px 5px;
+	background-color: #094660;
+	box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
+	border-radius: 5px;
+}
+
+
+.numerodia {
+	font: bold 36px Verdana, sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+}
+.nombredia {
+	font: 12px Verdana, sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+}
+article h1 {
+	margin-bottom: 5px;
+	font: bold 30px Georgia, sans-serif;
+}
+article p {
+	font: 18px Georgia, sans-serif;
+}
+figure {
+	margin: 10px 0px;
+}
+figure img {
+	max-width: 98%;
+	padding: 1%;
+	border: 1px solid;
+}
+#pielogo {
+	width: 96%;
+	padding: 2%;
+	background-color: #0F76A0;
+}
+#pielogo > div {
+	max-width: 960px;
+	margin: 0px auto;
+	background-color: #9FC8D9;
+	border-radius: 10px;
+}
+.seccionpie {
+	float: left;
+	width: 27.33%;
+	padding: 3%;
+}
+.seccionpie h1 {
+	font: bold 20px Arial, sans-serif;
+}
+.seccionpie p {
+	margin-top: 5px;
+}
+.seccionpie a {
+	font: bold 16px Arial, sans-serif;
+	color: #666666;
+	text-decoration: none;
+}
+
+
+#menuicono{
+	display: none;
+	width: 95%;
+	height: 38px;
+	padding: 12px 2% 0px 3%;
+	background-color: #9FC8D9;
+	border-top: 1px solid #094660;
+	border-bottom: 1px solid #094660;
+}
+
+@media (max-width:1120px){
+
+	article time{
+		position: static;
+		width: 100%;
+		padding: 0px;
+		margin-bottom: 10px;
+
+		background-color: #ffffff;
+		box-shadow: 0px 0px 0xp;
+		border-radius: 0px;
+	}
+
+	.numerodia {
+		display: inline-block;
+		font: bold 14px Verdana,sans-serif;
+		color: #999999;
+		
+		padding-right: 5px;
+	}
+
+	.nombredia{
+		display: inline-block;
+		color:#999999;
+		font: bold 14px Verdana,sans-serif;
+		
+	}
+
+	article h1{
+		margin-bottom: 0px;
+	}
+
+}
+
+@media(max-width: 720px){
+	#articulosprincipales{
+		width: 100%;
+	}
+
+	#infoadicional{
+		width: 90%;
+		padding: 5%;
+		margin-top: 20px;
+	}
+
+}
+
+@media(max-width: 480px){
+
+	#cabeceralogo{
+		
+		height: 70px;
+	
+	}
+
+	#cabeceralogo > div{
+		text-align: center;
+		padding-top: 10px;
+		
+	}
+
+	#cabeceralogo h1{
+		font: bold 46px Arial,sans-serif;
+		
+	}
+
+	#menuprincipal{
+		display: none;
+		width: 100%;
+		height: 100%;
+		padding: 0%;
+	}
+
+	#menuprincipal li {
+	display: block;
+	margin-right: 0px;
+	text-align: center;
+	}
+
+	#menuicono{
+		display: block;
+	}
+
+	.seccionpie{
+		width: 94%;
+		text-align: center;
+	}
+
+}
+
+
+
+/*
 
 #listamenu > li {
 	position: relative;
@@ -78,108 +284,4 @@
 	color: #333333;
 	text-decoration: none;
 }
-#menuprincipal li:hover {
-	background-color: #6FACC6;
-}
-main {
-	width: 96%;
-	padding: 2%;
-	background-image: url("fondo.png");
-}
-main > div {
-	width: 960px;
-	margin: 0px auto;
-}
-#articulosprincipales {
-	float: left;
-	width: 620px;
-	padding-top: 30px;
-	background-color: #FFFFFF;
-border-radius: 10px;
-}
-#infoadicional {
-	float: right;
-	width: 280px;
-	padding: 20px;
-	background-color: #E7F1F5;
-	border-radius: 10px;
-}
-#infoadicional h1 {
-	font: bold 18px Arial, sans-serif;
-	color: #333333;
-margin-bottom: 15px;
-}
-.recuperar {
-	clear: both;
-}
-article {
-	position: relative;
-	padding: 0px 40px 20px 40px;
-}
-article time {
-	display: block;
-	position: absolute;
-	top: -5px;
-	left: -70px;
-	width: 80px;
-	padding: 15px 5px;
-	background-color: #094660;
-	box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7);
-	border-radius: 5px;
-}
-.numerodia {
-	font: bold 36px Verdana, sans-serif;
-	color: #FFFFFF;
-	text-align: center;
-}
-.nombredia {
-	font: 12px Verdana, sans-serif;
-	color: #FFFFFF;
-	text-align: center;
-}
-article h1 {
-	margin-bottom: 5px;
-	font: bold 30px Georgia, sans-serif;
-}
-article p {
-	font: 18px Georgia, sans-serif;
-}
-figure {
-	margin: 10px 0px;
-}
-figure img {
-	padding: 5px;
-	border: 1px solid;
-}
-#pielogo {
-	width: 96%;
-	padding: 2%;
-	background-color: #0F76A0;
-}
-#pielogo > div {
-	width: 960px;
-	margin: 0px auto;
-	background-color: #9FC8D9;
-	border-radius: 10px;
-}
-.seccionpie {
-	float: left;
-	width: 270px;
-	padding: 25px;
-}
-.seccionpie h1 {
-	font: bold 20px Arial, sans-serif;
-}
-.seccionpie p {
-	margin-top: 5px;
-}
-.seccionpie a {
-	font: bold 16px Arial, sans-serif;
-	color: #666666;
-	text-decoration: none;
-}
-.seccionpie {
-	float: left;
-	width: 27.33%;
-	padding: 3%;
-}
+*/

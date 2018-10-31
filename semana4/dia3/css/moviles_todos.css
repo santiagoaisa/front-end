@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+
+#cuerpo{
+    background: url('../img/imagen.png') no-repeat;
+}
+
+@media(max-width : 480px){
+    #cuerpo{
+        background: url('../img/javascript.png') no-repeat;
+    }
+}
+
+
+article {
+    font: bold 1.5rem Georgia,sans-serif;
+
+}
+
+article h1{
+    font: bold 2rem Georgia,sans-serif;
+}
+
+aside h1{
+    font: bold 1.2em Georgia,sans-serif;
+}
+
+aside p{
+    font: 1em Georgia,sans-serif;
+}
+
+article img{
+/*  
+max-width: 100%;
+*/
+}
+
+#contenedor{
+    float: left;
+    width: 100%;
+    padding-right: 260px;
+    margin-right: -240px;
+    box-sizing: border-box;
+}
+
+aside{
+    float: left;
+    width: 240px;
+    padding: 20px;
+    background-color: #cccccc;
+    box-sizing: border-box;
+}
+
+#columnacentral{
+    float: right;
+    width: 100%;
+    padding-left: 220px;
+    margin-left: -200px;
+    box-sizing:  border-box;
+
+}
+
+#columnacentral>div{
+    padding: 20px;
+    background-color: #999999;
+
+}
+
+#columnaizquierda{
+    float: left;
+    width: 200px;
+    padding: 20px;
+    background-color: #cccccc;
+    box-sizing: border-box;
+
+}
+
+.recuperar{
+    clear: both;
+}
+
+
+@media (max-width: 768px){
+    body{
+        background-color: #ff33ff;
+    }
+}
+@media (max-width: 480px){
+    body{
+        background-color: #339933;
+    }
+}
