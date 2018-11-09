@@ -1,0 +1,31 @@
+a {
+  font-weight: bold;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  body.firefox a {
+    font-weight: normal; }
+
+#main {
+  color: black;
+  width: 50%; }
+  #main a {
+    font-weight: bold; }
+    #main a:hover {
+      color: red; }
+  #main-sidebar {
+    border: 1px solid; }
+  @media (max-width: 1000px) {
+    #main {
+      float: right; } }
+
+.funky {
+  font-family: "Arial";
+  font-size: 3em;
+  font-weight: bold;
+  color: magenta;
+  border-radius: 10px;
+  border-color: #cccccc;
+  border-style: dotted; }
+
+/*# sourceMappingURL=style.css.map */

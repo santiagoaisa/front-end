@@ -1,0 +1,53 @@
+$plomo:#cccccc;
+$grande:3em;
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+
+    body.firefox &{
+        font-weight: normal;
+    }
+
+}
+
+#main {
+    color: black;
+    width: 50%;
+    a{
+        font-weight: bold;
+        &:hover{
+            color: red;
+        }
+    }
+
+    &-sidebar{
+        border: 1px solid;
+    }
+
+    @media(max-width: 1000px){
+        float: right;
+
+    }
+
+  }
+
+  .funky{
+    font:{
+        family: "Arial";
+        size: $grande;
+        weight: bold; 
+       
+        
+    }
+        color:#ff0000 + #0000ff;       
+        border:{
+        radius: 10px;
+        color: $plomo;
+        style: dotted;
+    }
+
+  }
