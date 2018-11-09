@@ -52,7 +52,7 @@ function llenarTabla(respuesta){
     for (let i = 0; i < respuesta.length; i++) {       
         
        // tablaUsuario.innerHTML="<tr><th>Nombre</th><th>DNI</th><th>Acción</th></tr> ";    
-       tbody.innerHTML+=` <tr> <td>${respuesta[i].id}</td>  <td>${respuesta[i].name}</td> <td>${respuesta[i].username}</td> <td>${respuesta[i].email}</td> <td>${respuesta[i].address.street}</td> <td>${respuesta[i].phone}</td> <td>${respuesta[i].website}</td> </tr> `;
+       tbody.innerHTML+=` <tr> <td>${respuesta[i].id}</td>  <td>${respuesta[i].name}</td> <td>${respuesta[i].username}</td> <td>${respuesta[i].email}</td> <td>${respuesta[i].address.street}</td> <td>${respuesta[i].phone}</td> <td>${respuesta[i].website}</td> <td></td> </tr> `;
 
     }
 
