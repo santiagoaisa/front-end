@@ -57,26 +57,13 @@ function moverCoche() {
 prenderCoche().then(function (miMensaje) {
     console.log(miMensaje, "RESOLVE1");
     return acelerarCoche();
-
-}, function (miMensaje) {
-    console.log(miMensaje, "REJECT1");
-    return acelerarCoche();
-
-
-}).then(function (miMensaje) {
+    }
+).then(function (miMensaje) {
     console.log(miMensaje, "RESOLVE2");
-
     return moverCoche();
-
-}, function (miMensaje) {
-    console.log(miMensaje, "REJECT2");
-    return moverCoche();
-
 
 }).then(function (miMensaje) {
     console.log(miMensaje, "RESOLVE3");
-
-}, function (miMensaje) {
-    console.log(miMensaje, "REJECT3");
-
+}).catch(function (miError){
+    console.log("Error",miError);
 });
