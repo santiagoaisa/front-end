@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <script src="js/eventos2.js"></script>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input {
+            padding: 10px;
+            outline-color: blue;
+            font-size: 1rem;
+
+        }
+
+
+
+
+        div {
+            border: 1px solid black;
+            width: 300px;
+            height: 100px;
+            margin: 10px;
+            position: absolute;
+
+        }
+
+        .circulo {
+
+            background-color: #cccccc;
+            border: 1px solid black;
+            width: 20px;
+            height: 20px;
+            margin: auto;
+            border-radius: 100%;
+            position: absolute;
+            z-index: 3;
+
+
+
+        }
+
+        .cuadrado {
+            border: 1px solid black;
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            position: absolute;
+            left: 400px;
+            top: 400px;
+            z-index: 1;
+
+        }
+
+        /*
+           div:hover {
+            background-color: grey;
+           }
+    */
+    </style>
+
+</head>
+
+<body>
+
+    <form action="#">
+        <label>Nombre</label>
+        <input type="text" name="" id="nombre" placeholder="Ingrese su nombre">
+    </form>
+
+    <div id="info">
+
+    </div>
+
+    <div class="circulo" id="circulo">
+
+    </div>
+
+    <div class="cuadrado" id="cuadrado">
+
+    </div>
+</body>
+
+</html>
