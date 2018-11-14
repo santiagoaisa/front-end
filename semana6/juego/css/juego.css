@@ -1,0 +1,103 @@
+/*
+Normalize
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+Fondo del juego
+*/
+
+body{
+    background-image : url('../img/pasto.png');
+}
+
+#pista{
+    
+    width: 1160px;
+    height: 600px;
+}
+
+#auto{
+    background-image : url('../img/auto.png') ;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    z-index: 10;
+    top: 110px;
+
+}
+
+
+.partida{
+    background-image : url('../img/partida.png') ;
+    height: 100px;
+    width: 100px;
+   
+}
+
+
+.llegada{
+    background-image : url('../img/partida.png') ;
+    height: 100px;
+    width: 50px;
+   
+}
+
+.pistahorizontal{
+    background-image : url('../img/pistahorizontal.png') ;
+    height: 100px;
+    width: 500px;
+   
+    border-left: 0;
+    border-right: 0;
+    border-top: 2px;
+    border-bottom: 2px;
+   
+    border-style: solid;
+  
+}
+
+.pistacurva1{
+    background-image : url('../img/pistacurva1.png') ;
+    
+    width: 100px;
+    height: 100px;
+
+    border-left: 0;
+    border-right: 2px;
+    border-top: 2px;
+    border-bottom: 0;
+   
+    border-style: solid;
+}
+
+.pistavertical{
+    background-image : url('../img/pistavertical.png') ;
+    width: 100px;
+    height: 100px;
+
+    border-left: 2px;
+    border-right: 2px;
+    border-top: 0;
+    border-bottom: 0;
+   
+    border-style: solid;
+}
+
+.pistacurva2{
+    background-image : url('../img/pistacurva2.png') ;
+    
+    width: 100px;
+    height: 100px;
+
+    border-left: 2px;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px;
+   
+    border-style: solid;
+}
