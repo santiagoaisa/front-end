@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/polyfill.min.js"></script>
+
+    <script src="js/ui-01.js"></script>
+
+
+
+    <style type="text/css">
+
+
+        body{
+            margin-bottom: 200px;
+        }
+
+        .elemento {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background: #ccc;
+
+            display: inline-block;
+        }
+
+        .lista>li {
+            width: 50%;
+            list-style: none;
+            height: 100px;
+            border: 1px solid black;
+
+        }
+
+
+        .ui-selecting {
+            font-size: 2rem;
+        }
+
+        .ui-selected {
+            background-color: #cccccc;
+        }
+
+        #contenedor,#objetivo {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background: #ccc;
+
+            display: inline-block;
+        }
+
+        #contenido {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background: #ccc;
+
+            display: inline-block;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="elemento">
+        elemento 1
+    </div>
+
+
+    <div class="elemento">
+        elemento 2
+    </div>
+
+
+    <div class="elemento">
+        elemento 3
+    </div>
+
+    <div class="elemento">
+        elemento 4
+    </div>
+
+    <hr>
+
+    <ul class="lista">
+        <li>Crash car</li>
+        <li>Resident Evil</li>
+        <li>Mario</li>
+        <li>Yoshi</li>
+    </ul>
+
+    <hr>
+
+  
+
+    <div id="contenido">
+
+    </div>
+
+
+    <div id="contenedor">
+
+    </div>
+
+    <hr>
+
+<div id="objetivo">
+
+</div>
+
+<button id="btnAnimar">ANIMAR</button>
+
+
+
+<ul>
+    <li title="Esto es tootilp">1</li>
+    <li>2</li>
+    <li title="Esto es tootilp">3</li>
+</ul>
+
+<hr>
+
+<button id="btnModal">Abrir Modal</button>
+
+<div style="display: none" id="modal" title="¿Estas seguro?">
+    <p>Mira que si te vas, no regresas</p>
+</div>
+
+</body>
+
+</html>

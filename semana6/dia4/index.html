@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <script src="js/polyfill.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <style type="text/css">
+        .divTabla {
+            width: 500px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="jumbotron">
+
+        <div id="divResultado" class="divTabla">
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <div class="form">
+
+                    <form id="frmCrearUsuario" method="POST" >
+                        
+                        <label for="txtName" for="Nombre" >Nombre</label>
+                        <input type="text" class="form-control" name="name" id="txtName" required placeholder="Ingrese su Nombre">
+
+                        <label for="txtJob" >Job</label>
+                        <input type="text" class="form-control" name="job" id="txtJob" required placeholder="Ingrese su Trabajo">
+                        
+                        <br>
+                        <button type="submit" class="btn btn-danger">Enviar</button>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <a href="http://www.google.com" id="linkA">Link</a>
+
+</body>
+
+</html>

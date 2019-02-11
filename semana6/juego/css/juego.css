@@ -17,17 +17,17 @@ body{
 
 #pista{
     
-    width: 1160px;
+    width: 1170px;
     height: 600px;
 }
 
 #auto{
     background-image : url('../img/auto.png') ;
-    width: 100px;
-    height: 50px;
+    width: 80px;
+    height: 40px;
     position: absolute;
     z-index: 10;
-    top: 110px;
+    top: 120px;
 
 }
 
@@ -43,14 +43,14 @@ body{
 .llegada{
     background-image : url('../img/partida.png') ;
     height: 100px;
-    width: 50px;
+    width: 100px;
    
 }
 
 .pistahorizontal{
     background-image : url('../img/pistahorizontal.png') ;
     height: 100px;
-    width: 500px;
+    width: 400px;
    
     border-left: 0;
     border-right: 0;
@@ -71,7 +71,8 @@ body{
     border-right: 2px;
     border-top: 2px;
     border-bottom: 0;
-   
+    border-top-right-radius: 70px;
+    
     border-style: solid;
 }
 
@@ -98,6 +99,19 @@ body{
     border-right: 0;
     border-top: 0;
     border-bottom: 2px;
+
+    border-bottom-left-radius: 70px;
+    border-bottom-left-radius: 70px;
    
     border-style: solid;
+}
+
+.titulo{
+    color: purple;
+    background-color:#EA5256;
+    color: white;
+    width: 100px;
+    height: 40px;   
+    font-size: 1.5em;
+
 }

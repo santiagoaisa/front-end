@@ -1,62 +1,81 @@
 
-window.addEventListener("load", initComponentes);
+
+$(function () {
+    let auto = $("#auto");
+
+    $(auto).dblclick(function () {
+
+        $(document).mousemove(function (event) {
+
+            let x = event.clientX;
+            let y = event.clientY;
+
+            auto.css("left", x);
+            auto.css("top", y);
+
+            console.log("x  " + x, " y  " + y);
+
+            validar(x, y);
+
+        });
+    });
 
 
 
+    function validar(x, y) {
+        //coordenada x
+        //coordenada y
 
-function initComponentes() {
-    var btnActualizar=document.getElementById("btnActualizar");
+        //A 1er tramo de la pista
+        if (x >= 0 && x <= 500) {
 
-    btnActualizar.addEventListener("click",getUsuarios);
-
-}
-
-
-function getUsuarios(){
-    var request=new XMLHttpRequest();
-    let divCargando=document.getElementById("divCargando");
-    
-    request.onreadystatechange=function (){
-        if (request.readyState==3){
-           
-           
-
-            divCargando.removeAttribute("hidden");
-         
+            if (y <= 96) {
+                perdistes();
+            } else if (y >= 155) {
+                perdistes();
+            }
         }
 
-        if(request.readyState==4){
-            console.log("CARGA TERMINADA");
-            llenarTabla(JSON.parse(request.responseText));
+        //B 1ra curva
+        if (x >= 501 && x <= 518) {
+            if (y <= 96) {
+                perdistes();
+            } else if (y >= 600) {
+                perdistes();
+            }
 
-            divCargando.setAttribute("hidden","hidden");
+        } else if (x >= 501 && x > 518) {
+
+            if (y <= 96) {
+                perdistes();
+            } else if (y >= 454) {
+                perdistes();
+            } else if (x > 518 && y>=454) {
+                perdistes();
+            }else if (x > 518 && (y>=98 && y<=360)) {
+                perdistes();
+            }
+
         }
 
+        if(x>1000 ){
 
-    };
+            if(y>400 && y<455){
+                alert("GANASTES");
+            }
 
-    request.open("GET","https://jsonplaceholder.typicode.com/users/");
-
-    
-
-    request.send(null);
-}
-
-function llenarTabla(respuesta){
-    let tablaUsuario=document.getElementById("tablaUsuario");
-    
-    tablaUsuario.removeChild(tablaUsuario.childNodes[2]);
-
-    let tbody=document.createElement("tbody");
-
-    for (let i = 0; i < respuesta.length; i++) {       
-        
-       // tablaUsuario.innerHTML="<tr><th>Nombre</th><th>DNI</th><th>Acción</th></tr> ";    
-       tbody.innerHTML+=` <tr> <td>${respuesta[i].id}</td>  <td>${respuesta[i].name}</td> <td>${respuesta[i].username}</td> <td>${respuesta[i].email}</td> <td>${respuesta[i].address.street}</td> <td>${respuesta[i].phone}</td> <td>${respuesta[i].website}</td> <td></td> </tr> `;
+        }
 
     }
 
-    tablaUsuario.appendChild(tbody);
-}
+
+    function perdistes() {
+        $(auto).attr("src", "img/explosion.gif");
+        $(document).unbind('mousemove');
+        $(auto).unbind('dblclick');
+      
+    }
 
 
+
+});
