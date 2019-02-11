@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clientes</title>
+
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>
+
+    <script src="js/cliente.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <img src="img/logo.png" alt="Clientes">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="crearcliente.html">Crear Cliente</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+
+   
+ 
+
+    <div class="row">
+
+        <div class="col-md-7">
+
+            <!-- LISTADO DE CLIENTES -->
+            <table class="table table-striped" id="tablaCliente">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Razon Social</th>
+                        <th scope="col">Dirección</th>
+                        <th scope="col">Distrito</th>
+                        <th scope="col">Crédito</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+
+            </table>
+            <!-- LISTADO DE CLIENTES -->
+        </div>
+
+        <div class="col-md-5">
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- SCRIPT -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa8cFECuC9BFE92DkkSaWIpjW3lojCXTE&libraries=places"
+        async defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- SCRIPT -->
+</body>
+
+</html>

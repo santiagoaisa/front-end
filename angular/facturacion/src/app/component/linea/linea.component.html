@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-4">
+
+    <h2>Listado de Lineas</h2>
+
+
+
+    <ul class="linea">
+      <li *ngFor="let item of listaLinea" [class.selected]="item === lineaSeleccionada" (click)="seleccionar(item)">
+        <span class="badge">{{item.idlinea}}</span> <span class="item"> {{item.descripcion}}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="col-8">
+    <app-producto [linea]="lineaSeleccionada"></app-producto>
+  </div>
+</div>
